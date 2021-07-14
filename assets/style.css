@@ -284,12 +284,19 @@ a {
         height: 259.17px;
     }
 
+    #fixture h2 {
+        font-size: 30px;
+    }
     .players-grid { 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
         justify-content: center;
         }
+
+    #gallery h2{
+        font-size: 30px;
+    }
 
     #gallery .gallery-grid{
         display: grid;
