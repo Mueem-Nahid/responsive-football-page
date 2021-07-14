@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .05rem;
+}
+
+ul {
+    list-style-type: none;
+} 
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* navbar */
+.navbar {
+    background-color: #2D25A0;
+    color: #fff;
+    height: 70px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar .icon {
+    display: none;
+  }
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* utilities */
+
+.cta {
+    padding: 10px 25px;
+    color: white;
+    background-color: #E02C6D;;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* first section */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.showcase {
+    height: 677px;
+    background-color: #2D25A0;
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 64px;
+    margin-top: 140px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.showcase-img img {
+    /* width: 556.01px;
+    height: 438px; */
+    max-width: 100%;
+    margin-top: 100px;
+    position: relative;
+    
+}
+
+.showcase-img img:hover {
+    animation: rotation 3s linear 1;
+}
+
+/* for rotation */
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+}
+
+/* end of first section */
+
+/* players section */
+
+.players-grid { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    margin-top: 70px;
+    }
+  .players-grid > article {
+    width: 330px;
+    height: 474px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+  .players-grid > article img {
+    padding: 15px;
+    max-width: 100%;
+  }
+  .text > h3 , p{
+    padding: 0px 15px 15px 15px;
+  }
+
+  /* emd of players section */
+
+  /* footer */
+
+  .footer {
+    min-height: 50px;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  .footer img {
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-icon {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer .social-item {
+    height: 50px;
+    width: 50px;
+}
+
+.footer .social-icon i {
+    color: gray;
+}
+
+/* --------------media query for moblie----------------- */
+
+@media screen and (max-width: 688px) {
+    .navbar a:first-child {
+        display: none;
+    }
+
+    .navbar a.icon {
+      float: left;
+      display: block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .showcase {
+        width: 375px;
+        height: 695px;
+        padding: 0;
+        background-color: #2D25A0;
+        color: #fff;
+    }
+
+    .showcase h1 {
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+        margin-top: 100px;
+    }
+    
+    .showcase-img img {
+        width: 329px;
+        height: 259.17px;
+    }
+
+    .players-grid { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-content: center;
+        }
+
+    .footer {
+        min-height: 50px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .footer img {
+        width: 350px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .footer .social-icon {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .footer .social-item {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+  }
+  
