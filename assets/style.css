@@ -140,12 +140,83 @@ a {
 
   /* emd of players section */
 
+  /* match fixture */
+  .table-caption h2{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #2D25A0;
+    color: white;
+  }
+
+  #match-fixture {
+    width: 100%;
+  }
+  
+  #match-fixture td, #match-fixture th {
+    padding: 8px;
+  }
+  
+  #match-fixture tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #match-fixture tr:hover {background-color: #ddd;}
+  
+  #match-fixture th {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #2D25A0;
+    color: white;
+  }
+
+  #match-fixture td {
+      text-align: center;
+  }
+  /* end of match fixture */
+
+  /* gallery */
+  .gallery h2{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #2D25A0;
+    color: white;
+  }
+
+  #gallery h3{
+    text-align: center;
+  }
+
+  #gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  #gallery .videos {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  #gallery iframe {
+    padding: 10px;
+}
+
+  /* end of gallery */
+
   /* footer */
 
   .footer {
     min-height: 50px;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 40px;
     justify-content: center;
   }
@@ -168,6 +239,10 @@ a {
 
 .footer .social-icon i {
     color: gray;
+}
+
+.footer p {
+    text-align: center;
 }
 
 /* --------------media query for moblie----------------- */
@@ -215,6 +290,12 @@ a {
         grid-gap: 20px;
         justify-content: center;
         }
+
+    #gallery .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
 
     .footer {
         min-height: 50px;
